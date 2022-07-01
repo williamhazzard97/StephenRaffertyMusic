@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Rafferty Music - Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/879fe1fe11.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <script src="js/nav.js" defer></script>
+    
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+    <section id="NAV">
+        <nav id="navbar"> 
+            <a id="mainTitle" href="index.html">Stephen Rafferty Music</a>
+            <a href="#" class="dropdownToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+                <div class="navLinks">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="music.html">Music</a>
+                        </li>
+                        <li>
+                            <a href="media.html">Media</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+        </nav>
+    </section>
+
+    <section id="MAIN" style="background-image: url(images/Mournes_wiki_edit.jpg); background-size: cover;">
+        <div class="eventsMainText">
+            <div class="eventsTitle">
+                <h1>Events</h1>
+            </div>
+            <div class="eventsDescription">
+                <p>Back by popular demand! The live launch gigs for my new EP were a great success and I am bringing you another two live gigs in December, featuring a live band and support artists. Get your tickets below:</p>
+            </div>
+            
+        </div>
+
+        <div class="eventCalloutBox">
+            <div class="eventTitle">
+                <h2>Stephen Rafferty Live @ The Skylight Room, The Duke No.7, Warrenpoint</h2>
+                <p>Friday 10th December 2021, 8:00pm</p>
+            </div>
+            <div class="ticketLink">
+                <a href="https://www.ticketsource.co.uk/whats-on/newry/number-7-duke-street-the-duke/stephen-rafferty-ep-live-launch/2021-12-10/20:30/t-pjxxgq" class="btnTickets">Book Tickets</a>
+            </div>
+        </div>
+        <div class="eventCalloutBox">
+            <div class="eventTitle">
+                <h2>Stephen Rafferty Live @ The Anchor Bar, Newcastle</h2>
+                <p>Saturday 11th December 2021, 8:00pm</p>
+            </div>
+            <div class="ticketLink">
+                <a href="https://www.ticketsource.co.uk/whats-on/newcastle/the-anchor-bar/stephen-rafferty-ep-live-launch/2021-12-11/20:30/t-ajklpm" class="btnTickets">Book Tickets</a>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="FOOTER">
+        <div class="footerTopSection">
+            <div class="footerSummary">
+                <h2>Stephen Rafferty Music</h2>
+                <p>For more music and content, check out my social media pages or contact me for more information.</p>
+            </div>
+            <div class="contactFormContainer">
+                <h2>Contact Me</h2>
+                <form id="contactForm" method="POST" name="contactForm" action="php/contact.php">   
+                    
+                    <input type="text" class="name" name="name" placeholder="Name.." required>
+                    
+                    <input type="text" class="email" name="email" placeholder="Email address.." required>
+                    
+                    <textarea class="message" name="message" placeholder="Message.." required></textarea>
+
+                    <br>
+                    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LefmrsaAAAAAHEqh-CtbPMx5KV90Idn2ugeXeeh"></div>
+                    <br>
+                    
+                    <button type="submit" class="submit" required>Submit</button> 
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <h2>&copy Stephen Rafferty Music 2021</h2>
+        </div>
+        <div class="footerLinks">
+            <ul>
+                <li class="facebook">
+                    <a href="https://www.facebook.com/stephenraffertymusic"><i class="fab fa-facebook fa-3x"></i></a>
+                </li>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/stephenraffertymusic/"><i class="fab fa-instagram fa-3x"></i></a>
+                </li>
+                <li class="youtube">
+                    <a href="https://www.youtube.com/channel/UCyC-23kt0ydWfPgufThICcg"><i class="fab fa-youtube fa-3x"></i></a>
+                </li>
+                <li class="spotify">
+                    <a href="https://open.spotify.com/artist/2X9HQbBWjXK7stGM1mqxyE?si=q8hO16kvTTGixBT0eVRfaw"><i class="fab fa-spotify fa-3x"></i></a>
+                </li>
+                <li class="apple">
+                    <a href="https://music.apple.com/gb/artist/stephen-rafferty/id1515082005"><i class="fab fa-apple fa-3x"></i></a>
+                </li>
+            </ul> 
+        </div>
+        <div class="webWizardSignature">
+            &copy <a href="thewebwizard.co.uk">The Web Wizard 2021</a>
+            
+        </div>
+        <div class="photosByMartySignature">
+            &copy <a href="https://www.photosbymarty.com/">Photos by Marty</a>
+        </div>
+    </section>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

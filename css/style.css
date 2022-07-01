@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+/*-----GENERAL STYLES-----*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100%;
+    height: auto;
+    background-color: #292929;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    color: #292929;
+}
+
+/*-----NAV STYLES-----*/
+#NAV {
+    font-family: 'Dancing Script', cursive;
+}
+
+#mainTitle {
+    color: #bb9457;
+    font-weight: bold;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#292929;
+}
+
+.navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #bb9457;
+    padding: 1rem;
+    display: block;
+}
+
+.navLinks li a:hover {
+    color: #ffe6a7;
+    transform: translateY(-5%);
+    transition: 0.6s;
+}
+
+.dropdownToggle {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    text-align:center;
+}
+
+.dropdownToggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #bb9457;
+    border-radius: 10px;
+}
+
+/*-----INDEX STYLES-----*/
+#MAIN {
+    display: block;
+    height: 1000px;
+    padding: 1.5rem 2.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainLeft {
+    display: block;
+    position: relative;
+    max-width: 40%;
+    padding: 0.5rem 1.5rem;
+    left: 6rem;
+}
+
+.landingTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.musicServiceButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 1rem;
+}
+
+.btnSpotifyHomeLink {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 3px;
+    border: black 1px solid;
+    color: #292929;
+    background-color: #bb9457;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 12px 16px;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    letter-spacing: 0;
+    box-shadow: #292929;
+}
+
+.btnSpotifyHomeLink:hover {
+    background-color: #ffe6a7;
+    color: #292929; 
+}
+
+/*-----FOOTER STYLES-----*/
+#FOOTER {
+    color: #bb9457;
+    background-color:#292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+#FOOTER h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.footerTopSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerSummary {
+    width: 50%;
+}
+
+.footerSummary p {
+    width: 75%;
+    color: #ffe6a7;
+}
+
+.copyright {
+    padding: 1rem 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.footerLinks {
+    width: 40%;
+    margin: auto;
+}
+
+.footerLinks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerLinks ul li {
+    list-style: none;
+}
+
+.footerLinks ul li a {
+    color: #bb9457;
+    transition: 0.2s;
+}
+
+.footerLinks ul li a:hover {
+    color: #ffe6a7;
+}
+
+.webWizardSignature {
+    padding: 0.5rem 0.5rem;
+    width: 20%;
+    text-align: left;
+}
+
+.webWizardSignature a {
+    
+    color: #bb9457;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.webWizardSignature a:hover {
+    text-decoration: underline;
+}
+
+.photosByMartySignature {
+    padding: 0.5rem 0.5rem;
+    width: 20%;
+    text-align: left;
+}
+
+.photosByMartySignature a {
+    
+    color: #bb9457;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+.photosByMartySignature a:hover {
+    text-decoration: underline;
+}
+
+/*-----CONTACT STYLES-----*/
+.contactFormContainer {
+    width: 50%;
+    height: auto;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    color: #ffe6a7;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #292929;
+    box-sizing: border-box;
+}
+
+#contactForm input {
+    width: 60%;
+    font-size: 1rem;
+    padding: 0.75rem 0.75rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #292929;
+    color: #ffe6a7;
+}
+
+#contactForm textarea {
+    width: 80%;
+    font-size: 0.9rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0.75rem 0.75rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #292929;
+    color: #ffe6a7;
+}
+
+.submit {
+    width: 35%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.5rem 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+    border: black 1px solid;
+    box-sizing: border-box;
+    background-color: #bb9457;
+    color: #292929;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+.submit:hover {
+    background-color: #ffe6a7;
+}
+
+/*-----ABOUT STYLES-----*/
+.aboutContainer {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    color: #bb9457;
+}
+
+.aboutText {
+    width: 50%;
+    font-size: 1.55rem;
+
+}
+
+.aboutText p {
+    color: #ffe6a7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*-----MEDIA STYLES-----*/
+.videoContainer {
+    display: flexbox;
+    position: relative;
+    width: 60%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: auto;
+}
+
+.videoContainer iframe {
+    display: flexbox;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    height: 56.25%;
+}
+
+/*-----MUSIC STYLES-----*/
+.musicHeader {
+    color: #bb9457;
+    font-size: 1.55rem;
+    width: 50%;
+    padding: 1rem 1rem;
+}
+
+.musicHeader p {
+    color: #ffe6a7;
+}
+
+.musicMainContent {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.albumCover {
+    max-width: 22%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    color: #bb9457;
+}
+
+.musicMainContent div img{
+    max-width: 100%;
+    border: #292929 1px solid;
+}
+
+/*-----EVENTS STYLES-----*/
+.eventsMainText {
+    max-width: 40%;
+    font-size: 1.55rem;
+    display: block;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.eventCalloutBox {
+    display: block;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    padding: 1.25rem 1.25rem;
+    background-color:#e0e0e0;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.eventCalloutBox p {
+    color: red;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.btnTickets {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    padding: .75rem 1rem;
+    background-color: #bb9457;
+    border: solid 1px rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.btnTickets:hover {
+    background-color:#ffe6a7;
+}
+
+/*---GALLERY STYLES---*/
+.galleryTitle {
+    margin-bottom: 20px;
+    color: #bb9457;
+    font-size: 2.3rem;
+    width: 50%;
+    padding: 1rem 1rem;
+}
+
+.hello {
+    opacity: 1 !important;
+}
+
+.full {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.full .content {
+    background-color: rgba(0,0,0,0.75) !important;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.full .content img {
+    left: 50%;
+    transform: translate3d(0, 0, 0);
+    animation: zoomin 1s ease;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+  
+.byebye {
+    opacity: 0;
+}
+  
+.byebye:hover {
+    transform: scale(0.2) !important;
+}
+  
+.gallery {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 8px;
+}
+  
+.gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+}
+  
+.gallery img:hover {
+    box-shadow: 0 0 32px #333;
+}
+  
+.gallery .content {
+    padding: 4px;
+}
+  
+.gallery .gallery-item {
+    transition: grid-row-start 300ms linear;
+    transition: transform 300ms ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+  
+.gallery .gallery-item:hover {
+    transform: scale(1.025);
+}
+
+@media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+  }
+  @media (max-width: 400px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+  }
+  @-moz-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      
+      filter: blur(3px);
+    }
+    30% {
+      filter: blur(3px);
+      
+    }
+    70% {
+      max-width: 50%;
+      filter: blur(0px);
+    }
+    100% {
+      max-width: 100%;
+      filter: blur(0px);
+    }
+  }
+  @-webkit-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      
+      filter: blur(3px);
+    }
+    30% {
+      filter: blur(3px);
+      
+    }
+    70% {
+      max-width: 50%;
+      
+    }
+    100% {
+      max-width: 100%;
+      
+    }
+  }
+  @-o-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      
+      filter: blur(3px);
+    }
+    30% {
+      filter: blur(3px);
+      
+    }
+    70% {
+      max-width: 50%;
+      
+    }
+    100% {
+      max-width: 100%;
+      
+    }
+  }
+  @keyframes zoomin {
+    0% {
+      max-width: 50%;
+      
+      filter: blur(3px);
+    }
+    30% {
+      filter: blur(3px);
+      
+    }
+    70% {
+      max-width: 50%;
+      
+    }
+    100% {
+      max-width: 100%;
+      
+    }
+  }
+  
+
+
+/*-------------------------MOBILE STYLES-------------------------*/
+@media (max-width: 700px) {
+    #mainTitle {
+        font-size: 1.8rem;  
+    }
+}
+
+/*-----NAV MOBILE STYLES-----*/
+
+@media (max-width: 700px) {
+    .dropdownToggle {
+        display: flex;
+        
+    }
+
+    .navLinks {
+        display: none;
+        width: 100%;
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .navLinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLinks li {
+        text-align: center;
+    }
+
+    .navLinks li a {
+        padding: 0.5rem 1rem;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/*-----INDEX MOBILE STYLES-----*/
+
+@media (max-width: 700px) {
+    #MAIN {
+        display: block;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0rem 0.5rem;
+    }
+    
+    #mainLeft {
+        display: block;
+        max-width: 100%;
+        left: 0;
+        padding-top: 17rem;
+    }
+    
+    .landingTitle {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #bb9457;
+    }
+
+    .landingParagraph {
+        color: #ffe6a7;
+    }
+
+    .btnSpotifyHomeLink {
+        font-size: 0.85rem;
+        padding: 9px 12px;
+    }
+
+}
+
+/*-----FOOTER MOBILE STYLES-----*/
+
+@media (max-width: 700px) {
+    #FOOTER {
+        max-width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .footerTopSection {
+        flex-direction: column;  
+    }
+
+    .footerSummary {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .footerSummary p {
+        width: 100%;
+    }
+
+    #FOOTER .copyright h2 {
+        font-size: 1.2rem;
+    }
+
+    .footerLinks {
+        min-width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footerLinks ul li a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .webWizardSignature {
+        width: 50%;
+    }
+    
+    .photosByMartySignature {
+        width: 50%;
+    }
+}
+
+/*-----CONTACT MOBILE STYLES-----*/
+@media (max-width: 700px) {
+    .contactFormContainer {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #contactForm input {
+        width: 80%;
+        font-size: 0.8rem; 
+    }
+    
+    #contactForm textarea {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.80);
+        -webkit-transform: scale(0.80);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+    
+}
+
+/*-----ABOUT MOBILE STYLES-----*/
+@media (max-width: 700px) {
+    .aboutContainer {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        color: #bb9457;
+        top: 15.5rem;
+    }
+    
+    .aboutText {
+        width: 100%;
+    }
+    
+    .aboutText p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .filler {
+        min-height: 250px;
+    }
+}
+
+/*-----MUSIC MOBILE STYLES-----*/
+@media (max-width: 700px) {
+    .musicHeader {
+        position: relative;
+        top: 15.5rem;
+        width: 90%;
+        padding: 1rem 1rem;
+    }
+    
+    .musicHeader p {
+        color: #ffe6a7;
+    }
+    
+    .musicMainContent {
+        max-width: 90%;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap;
+        top: 15.5rem;
+        margin-bottom: 250px;
+    }
+    
+    .albumCover {
+        max-width: 45%;
+        height: auto;
+        align-items: center;
+        margin: auto;
+        color: #bb9457;
+    }
+    
+    .musicMainContent div img{
+        max-width: 100%;
+        border: #292929 1px solid;
+    }
+
+}
+
+/*-----MEDIA MOBILE STYLES-----*/
+@media (max-width: 700px) {
+    .videoContainer {
+        display: flexbox;
+        position: relative;
+        width: 60%;
+        padding-bottom: 56.25%;
+        height: 0;
+        margin: auto;
+    }
+    
+    .videoContainer iframe {
+        display: flexbox;
+        position: absolute;
+        top: 2em;
+        left: 0;
+        width: 100%;
+        height: 56.25%;
+    }
+}
+
+/*-----EVENTS MOBILE STYLES-----*/
+@media (max-width: 700px) {
+    .eventsMainText {
+        max-width: 100%;
+        display: block;
+        position: relative;
+        top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .eventsTitle {
+        width: 100%;
+        color: rgb(34, 34, 34);
+    }
+
+    .eventsDescription {
+        width: 100%;
+        color: rgb(34, 34, 34);
+    }
+}
